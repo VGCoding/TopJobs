@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-icon>terrain</mat-icon>
+<span> TopJobs</span>
+
+<div class="spacer">  </div>
+
+<a href="/home" mat-button >Home </a>
+<a href="/aboutus" mat-button id="au">About Us</a>
+<!--<a href="/app-admin-login" mat-raised-button color="accent" > SignIn as Admin</a>-->
+&nbsp;&nbsp;
+<a href="signup" mat-raised-button color="accent" id="lo"style="margin-right: 5px;" >Logout</a>
+
+
+</mat-toolbar>
+<h1>Your Applications Status</h1>
+
+
+<div class="col-lg-8 mb-3 box shadow-sm" *ngFor="let i of applications" >
+    <div>
+    <h2>Application Status :{{i.applicationStatus}}</h2> 
+  <!--  <button class="btn btn-primary" (click)="cl(i.jobId)">View Details</button>-->
+</div>
+    
+      <h2>Job Id :{{i.jobId}}</h2> 
+  
+ <!--  
+    <div >
+    <h2>{{job.jobCategory}}</h2>
+    <h3>{{job.companyName}}</h3>
+    </div>
+  </div>-->
+<app-footer></app-footer>

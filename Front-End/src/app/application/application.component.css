@@ -1,0 +1,42 @@
+.spacer{
+  flex: 1 1 auto;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+.jse{
+    background-color: #eff6ff;
+    padding-left: 300px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  
+  }
+.form-select{
+    width: 120px;
+    margin-left: 80%;
+   
+}
+.box{
+    background-color: #fff;
+    width: 560px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+  @media (max-width:300px)
+{
+
+    .mat-elevation-z6{
+     
+      flex-direction: column;
+      width:320px;
+      height:240px
+  }
+  .spacer{
+    flex:0 0 auto;
+}
+.jse{
+  margin-left: -90%;
+}
+}

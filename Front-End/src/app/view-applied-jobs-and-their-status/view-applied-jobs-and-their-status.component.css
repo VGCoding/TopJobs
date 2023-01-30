@@ -1,0 +1,19 @@
+.spacer{
+    flex: 1 1 auto;
+  }
+  a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  @media(max-width:300px){
+    .col-lg-8{
+     margin-left:-10%;
+    }
+    .mat-elevation-z6{
+        height: 310px;
+        flex-direction: column;
+        width: 350px;
+    }
+    .spacer{
+        flex:0 0 auto;
+    }
+  }

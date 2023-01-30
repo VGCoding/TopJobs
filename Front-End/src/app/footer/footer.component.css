@@ -1,0 +1,21 @@
+.tc1{
+    left: 30%;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  .footer{
+    position:fixed;
+bottom:0px;
+width:100%;
+  }
+  @media (max-width:300px){
+    .footer{
+      flex-direction: column;
+    }
+    .tc1{
+      margin-left: -60%;
+     
+    }
+  }

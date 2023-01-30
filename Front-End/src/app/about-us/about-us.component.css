@@ -1,0 +1,26 @@
+.ab2{
+    width: 750px;
+    font-family: sans-serif;
+   
+   
+}
+.abtUs{
+    margin-top:85px ;
+    margin-bottom: 160px;
+    margin-left: 100px;
+    letter-spacing: 1.5px;
+}
+
+.ab1{
+    font: bolder;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    font-weight: bold;
+    
+}
+@media (max-width:300px)
+{
+    .ab2{
+        width:180px
+    }
+}

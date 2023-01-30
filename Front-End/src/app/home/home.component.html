@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+
+<section class="Initial">
+
+    <img id="mimg" [src]="myimage">
+     <div class="home-content">
+     <h1 id="hio">Find Your Dream Job</h1> 
+     <div class="brosearch">
+        <input type="text" [(ngModel)]="input" id="inp" name="searchterm" placeholder="Enter Designation">
+        <button id="b1" class="btn btn-primary"(click)="OnSubmit(input)"> Search</button>
+        <section class="jse"> 
+    
+ 
+            <div class="col-lg-8 mb-3" id="box2" *ngFor="let i of Jobs" >
+              
+              <div class="box shadow-sm">
+             <span> <h2>{{i.jobCategory}} <button type="button" (click)="apply()" id="b2" class="btn btn-danger">Apply</button></h2></span>
+              
+              <h3 color="silver"><mat-icon>business </mat-icon> {{i.companyName}}  <mat-icon>room </mat-icon>{{i.noOfVacancies}}</h3>
+              <h4>{{i.jobDescription}}</h4>
+              
+           <!--<button type="button" (click)="apply(i.jobId)" class="btn btn-danger">Apply</button>-->
+          
+            </div>  
+            </div>
+            </section> 
+            <section class="employers">
+                <div class="container">
+            <h2 id="h2t">Explore Our Top Recruiters</h2> 
+            <div class="row">
+                <button class="col " id="ib1" onClick="window.open('//www.airbus.com/en')"  >
+                  
+                        <img [src]="image1" >
+                        <p id="ibt1">350+ Hires</p>
+                </button>
+
+                <button class="col  " id="ib2" onClick="window.open('//www.intel.in/content/www/in/en/homepage.html')" >
+                  
+                    <img [src]="image2" >
+                    <p id="ibt2">300+ Hires</p>
+                </button>    
+            <button class="col " id="ib3"  onClick="window.open('//www.loreal.com/en/')" >
+                  
+                <img [src]="image3" >
+                <p id="ibt3">200+ Hires</p>
+            </button>
+        <button class="col " id="ib4" onClick="window.open('//www.morganstanley.com')">
+                  
+            <img [src]="image4" >
+             <p id="ibt4">70+ Hires</p>
+        </button>    
+                
+                </div>
+            </div>
+        </section>
+     </div> 
+
+     <!-- <h4>Browse the latest jobs & create your Profile to connect with the best companies.</h4>-->
+     </div>
+     
+    </section>
+<!--<section class="search">
+    <app-search></app-search>
+</section> -->
+
+<!--<section class="employers">
+    <div class="container">
+        <h1 class="text-center">Top Recruiters</h1>
+    
+            <div class="row mt-5">
+            <div class="col-lg-3 mb-3" *ngFor="let cs of companies">
+                <div class="box shadow-sm">
+                    <img src="{{cs.image}}" >
+                </div>   
+    
+            </div>
+        </div>
+    
+    </div>
+</section>-->
+
+    
+ 
+<app-footer></app-footer>

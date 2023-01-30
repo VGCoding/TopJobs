@@ -1,0 +1,19 @@
+.spacer{
+    flex: 1 1 auto;
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+.mat-elevation-z6{
+    width: 100%;
+}
+@media (max-width:300px){
+.mat-elevation-z6{
+    height: 310px;
+    flex-direction: column;
+    width: 350px;
+}
+.spacer{
+    flex:0  auto;
+}
+}

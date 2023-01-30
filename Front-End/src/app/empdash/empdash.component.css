@@ -1,0 +1,76 @@
+.spacer{
+  flex: 1 1 auto;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+.jse,.post{
+    background-color: #eff6ff;
+    padding-left: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+  .box{
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+  .btn-primary{
+    margin-left: 90%;
+  }
+  .head{
+  font-weight: bold;
+  }
+  h2,h3,h4{
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+  #txtbox {
+    height: 300px;
+    width : 300px;
+  }
+  .btn-dark{
+    margin-left: 90%;
+  }
+  .bv
+  {
+    margin-left: 50px;
+  }
+  .username{
+    margin-left: 80%;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 20px;
+  
+   }
+   @media (max-width:800px)
+{
+
+    .mat-elevation-z6{
+     
+      flex-direction: column;
+      width: 310px;
+      height:240px
+  }
+  .spacer{
+    flex:0 0 auto;
+}
+  .post,.jse
+  {
+    font-size: medium;
+    font-weight: bold;
+    margin-left:-50%;
+    background-color: #eff6ff;
+  }
+ form{
+  margin-left:-100% ;
+ }
+ .username{
+  margin-left: -100%;
+  font-size: medium;
+  font-weight: bold;
+ }
+}
